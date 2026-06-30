@@ -6,16 +6,29 @@ pick the plugins you want.
 
 ## Install
 
-In Claude Code:
+Pick whichever fits your setup. (Replace `ayal/ayal-skills` with this repo's
+`owner/name` if you forked it.)
+
+### Claude Code plugin (native)
 
 ```
 /plugin marketplace add ayal/ayal-skills
 /plugin install recall@ayal-skills
 ```
 
-(Replace `ayal/ayal-skills` with this repo's `owner/name` if you forked it.)
+Update later with `/plugin marketplace update ayal-skills`.
 
-To update later: `/plugin marketplace update ayal-skills`.
+### `npx skills` (universal — Claude Code, Cursor, Codex, Gemini CLI, …)
+
+The [`npx skills`](https://github.com/vercel-labs/skills) tool works across 70+
+agents and discovers the skills in this repo via its plugin manifest:
+
+```
+npx skills add ayal/ayal-skills
+```
+
+It auto-detects your agent and installs non-interactively. Update later with
+`npx skills update`.
 
 ## Plugins
 
