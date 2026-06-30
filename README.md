@@ -34,8 +34,8 @@ It auto-detects your agent and installs non-interactively. Update later with
 
 ### `recall`
 
-Find a past Claude Code conversation by **what it was about**, and get told exactly
-how to resume it — which project it lived in, when it happened, and the resume command.
+Find a past conversation by **what it was about**, and get told exactly how to resume
+it — which project it lived in, when it happened, and the resume command.
 
 Once installed, just describe the conversation:
 
@@ -44,13 +44,16 @@ Once installed, just describe the conversation:
 /recall when I was debugging the AC unit's local network control
 ```
 
-It searches your local transcripts (`~/.claude/projects/**/*.jsonl`), ranks the
-matches, confirms the best one, and reports the title, project/cwd, date range, and
-both ways to resume (terminal `claude --resume <id>` or in-session `/resume`).
+**Optimized for Claude Code:** it searches your local transcripts
+(`~/.claude/projects/**/*.jsonl`) via a deterministic helper (`search.py`) so it's fast
+and cheap on tokens — the model only turns your fuzzy prompt into search terms and
+confirms the match. It reports the title, project/cwd, date range, and both ways to
+resume (terminal `claude --resume <id>` or in-session `/resume`).
 
-A deterministic helper (`search.py`) does the file scan so it's fast and cheap on
-tokens; the model only handles turning your fuzzy prompt into search terms and
-confirming the match.
+**Other agents (Codex, Cursor, Gemini, Antigravity, …):** the skill falls back to a
+general method — it locates that agent's own history store, searches it, and reports
+results using that agent's resume mechanism. Best-effort, and honest when it can't
+find or parse the store.
 
 **Privacy:** everything runs locally against transcripts already on your machine.
 Nothing is uploaded.

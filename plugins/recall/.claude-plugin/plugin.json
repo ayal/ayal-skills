@@ -1,10 +1,16 @@
 {
   "name": "recall",
-  "version": "0.1.0",
-  "description": "Find a past Claude Code conversation by what it was about, and report how to resume it. Searches local transcripts across all projects.",
+  "version": "0.2.0",
+  "description": "Find a past coding-agent conversation by what it was about, and report how to resume it. Optimized for Claude Code (reads local transcripts); falls back to a general search method for other agents.",
   "author": {
     "name": "Ayal G",
     "email": "ayalg@wix.com"
   },
-  "keywords": ["conversation", "history", "resume", "search", "transcripts"]
+  "keywords": [
+    "conversation",
+    "history",
+    "resume",
+    "search",
+    "transcripts"
+  ]
 }

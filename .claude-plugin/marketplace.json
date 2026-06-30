@@ -6,15 +6,21 @@
   },
   "metadata": {
     "description": "Ayal's personal collection of Claude Code skills.",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "recall",
       "source": "./plugins/recall",
-      "description": "Find a past Claude Code conversation by what it was about, and report how to resume it.",
+      "description": "Find a past coding-agent conversation by what it was about, and report how to resume it. Optimized for Claude Code; general fallback for other agents.",
       "category": "productivity",
-      "keywords": ["conversation", "history", "resume", "search", "transcripts"]
+      "keywords": [
+        "conversation",
+        "history",
+        "resume",
+        "search",
+        "transcripts"
+      ]
     }
   ]
 }
