@@ -1,0 +1,10 @@
+{
+  "name": "recall",
+  "version": "0.1.0",
+  "description": "Find a past Claude Code conversation by what it was about, and report how to resume it. Searches local transcripts across all projects.",
+  "author": {
+    "name": "Ayal G",
+    "email": "ayalg@wix.com"
+  },
+  "keywords": ["conversation", "history", "resume", "search", "transcripts"]
+}

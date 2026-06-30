@@ -1,0 +1,20 @@
+{
+  "name": "ayal-skills",
+  "owner": {
+    "name": "Ayal G",
+    "email": "ayalg@wix.com"
+  },
+  "metadata": {
+    "description": "Ayal's personal collection of Claude Code skills.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "recall",
+      "source": "./plugins/recall",
+      "description": "Find a past Claude Code conversation by what it was about, and report how to resume it.",
+      "category": "productivity",
+      "keywords": ["conversation", "history", "resume", "search", "transcripts"]
+    }
+  ]
+}
